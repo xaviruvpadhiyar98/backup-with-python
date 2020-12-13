@@ -36,7 +36,7 @@ def showFilesGreaterMB(all_files,MB=10):
             print(x,str(round(size/(1024*1024),2))+ 'MB')
 
 
-def createArchive():
+def createArchive(all_files):
     '''
     Create Archive with Date as Name
     '''
