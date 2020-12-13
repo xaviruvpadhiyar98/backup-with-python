@@ -45,6 +45,9 @@ def createArchive(all_files):
     with ZipFile(zip_filename,'w') as z:
         for x in all_files:
             z.write(x)
+    print('The Backup File is ' + zip_filename)
+    print('The Size of Backup is '+ str(round(getsize(zip_filename)/(1024*1024),2))+ 'MB')
+    print('Ending... the Program')
 
 
 if __name__ == "__main__":
